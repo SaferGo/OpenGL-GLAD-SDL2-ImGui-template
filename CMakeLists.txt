@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.9.1)
 
-project(BoidSimulation)
+project(ProjectName)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../bin")
@@ -28,8 +28,6 @@ file(GLOB IMGUI_SOURCES
 add_library(imgui ${IMGUI_SOURCES})
 target_link_libraries(imgui PUBLIC glad)
 target_include_directories(imgui PUBLIC ${IMGUI_DIR} ${IMGUI_DIR}/backends)
-# Configure IMGUI to use GLAD
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DIMGUI_IMPL_OPENGL_LOADER_GLAD")
 
 # Executable
 add_executable(${PROJECT_NAME} "${CMAKE_SOURCE_DIR}/src/main.cpp")
