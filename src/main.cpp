@@ -163,5 +163,5 @@ int main()
    SDL_DestroyRenderer(renderer);
    SDL_DestroyWindow(window);
 
-	return 0;
+   return 0;
 }
