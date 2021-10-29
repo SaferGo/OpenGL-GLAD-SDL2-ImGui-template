@@ -1,5 +1,5 @@
 # OpenGL-GLAD-SDL2-ImGui-template
-A simple c++ template for creating projects with OpenGL, GLAD, SDL2 and ImGui.
+A simple c++ template for creating projects with OpenGL, GLAD, SDL2 and ImGui on Linux.
 
 ## Dependencies
 
